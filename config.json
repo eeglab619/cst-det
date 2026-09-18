@@ -1,0 +1,77 @@
+{
+  "participants": 16,
+  "sample_rate": 256,
+  "channels": [
+    "P3",
+    "PO7",
+    "O1",
+    "Oz",
+    "Pz",
+    "P4",
+    "PO8",
+    "O2"
+  ],
+  "target_frequencies_hz": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "durations_seconds": [
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5
+  ],
+  "label_shift_seconds": 0.14,
+  "train_blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "validation_blocks": [
+    13,
+    14,
+    15,
+    16
+  ],
+  "test_blocks": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "epochs": 100,
+  "learning_rate": 0.001,
+  "task": "detection",
+  "batch_size": 32,
+  "optimizer": "Adam",
+  "input_seconds": 6,
+  "stride_samples": 32,
+  "threshold": 0.5,
+  "smoothing_kernel": 5,
+  "closing_points": 5,
+  "opening_points": 4,
+  "notch_hz": 50,
+  "acquisition_sample_rate": 1024,
+  "loss": "binary_cross_entropy",
+  "bandpass_hz": [
+    1,
+    90
+  ],
+  "smoothing_context": "past_scores_only"
+}
